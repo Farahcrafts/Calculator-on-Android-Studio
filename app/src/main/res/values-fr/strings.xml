@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculatrice</string>
+    <string name="login">S\'identifier</string>
+    <string name="password">Mot de passe</string>
+    <string name="hintPassword">Entrer votre mot de passe</string>
+    <string name="valider">Valider</string>
+    <string name="hintLogin">Entrez votre prenom</string>
+    <string name="welcome">Bienvenue</string>
+</resources>
