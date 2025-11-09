@@ -7,6 +7,15 @@
     <string name="valider">Validate</string>
     <string name="welcome">Welcome</string>
     <string name="calculator" translatable="false">Calculator</string>
+    <string name="standard">Standard</string>
+    <string name="scientific">Scientific</string>
+    <string name="graphic">Graphic</string>
+    <string name="programmer">Programmer</string>
+    <string name="devise">Devise</string>
+    <string name="volume">Volume</string>
+    <string name="length">Length</string>
+    <string name="weight">Weight</string>
+    <string name="temperature">Temperature</string>
 
 
 </resources>

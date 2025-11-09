@@ -1,16 +1,26 @@
 package com.example.myapplication;
 
+import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.google.android.material.snackbar.Snackbar;
+
 
 public class MainActivity2 extends AppCompatActivity {
 
@@ -23,6 +33,37 @@ public class MainActivity2 extends AppCompatActivity {
     Button equal;
     boolean operationEnCours;
     float result;
+    Snackbar snackbar;
+    LinearLayout linearLayout;
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+    int id=item.getItemId();
+    if (id==R.id.standard){
+        Snackbar.make(linearLayout,"Calculatrice scientifique choisie",Snackbar.LENGTH_LONG)
+                .setAction("Annuler", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Snackbar.make(linearLayout,"Operation annulee",Snackbar.LENGTH_LONG)
+                                .setBackgroundTint(Color.WHITE)
+                                .setTextColor(Color.GRAY)
+                                .show();
+                    }
+                }).setBackgroundTint(Color.BLACK)
+                .setTextColor(Color.WHITE)
+                .show();
+
+    }else {
+        return true;
+    }
+        return super.onOptionsItemSelected(item);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +76,8 @@ public class MainActivity2 extends AppCompatActivity {
             return insets;
         });
 
+        //Association avec linearlayout
+        linearLayout=findViewById(R.id.main);
         //Associations de editText et textView
         editText=findViewById(R.id.editText);
         textView=findViewById(R.id.textView);

@@ -7,4 +7,13 @@
     <string name="valider">Valider</string>
     <string name="hintLogin">Entrez votre prenom</string>
     <string name="welcome">Bienvenue</string>
+    <string name="standard">Standard</string>
+    <string name="scientific">Scientifique</string>
+    <string name="graphic">Graphique</string>
+    <string name="programmer">Programmeur</string>
+    <string name="devise">Devise</string>
+    <string name="volume">Volume</string>
+    <string name="length">Longueur</string>
+    <string name="weight">Poids</string>
+    <string name="temperature">Temperature</string>
 </resources>

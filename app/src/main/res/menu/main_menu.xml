@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item android:title="@string/standard"
+            android:id="@+id/standard"/>
+        <item android:title="@string/scientific"
+            android:id="@+id/scientific"/>
+        <item android:title="@string/graphic"
+            android:id="@+id/graphic"/>
+        <item android:title="@string/programmer"
+            android:id="@+id/programmer"/>
+        <item android:title="@string/devise"
+            android:id="@+id/devise"/>
+        <item android:title="@string/volume"
+            android:id="@+id/volume"/>
+        <item android:title="@string/length"
+            android:id="@+id/length"/>
+        <item android:title="@string/weight"
+            android:id="@+id/weight"/>
+        <item android:title="@string/temperature"
+            android:id="@+id/temperature"/>
+    </group>
+</menu>
